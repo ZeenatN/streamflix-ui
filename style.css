@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.logo {
+  color: red;
+}
+.btn {
+  background: #111;
+  border: 1px solid white ;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, rgba(0,0,0,.8), #000), url("https://picsum.photos/1200/500") no-repeat center;
+  background-size: cover;
+}
+.hero h2 {
+  font-size: 48px;
+}
+.email-box {
+  margin-top: 20px;
+}
+.email-box input {
+  padding: 12px;
+  width: 250px;
+}
+.btn-red {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+}
+.movies {
+  padding: 50px;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 20px;
+}
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition : transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movie-card:hover img{
+   transform :scale(1.08);
+   box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+.movie-card p {
+  text-align: center;
+  margin-top: 5px;
+}
+.faq {
+  padding: 50px;
+}
+.question {
+  width: 100%;
+  padding: 15px;
+  background: #222;
+  color: white;
+  border: none;
+  text-align: left;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.answer {
+  display: none;
+  padding: 15px;
+  background: #111;
+}
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: gray;
+}
+
+@media (max-width: 600px){
+    .hero h2{
+        font-size : 28px;
+    }
+
+    .email-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-box input {
+        width: 100%;
+    }
+
+    .navbar {
+    padding:15px;
+}
+
+    .movies{
+        padding :20px;
+    }
+ }
+
